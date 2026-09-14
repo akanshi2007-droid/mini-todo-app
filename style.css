@@ -1,4 +1,8 @@
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 body{
     font-family:"Inter",sans-serif;
     min-height:100vh;
@@ -64,13 +68,12 @@ h1{
 h1 span{
     color:#a78bfa;
 }
-.subtitle{
-    margin-top:5px;
-    color:#a1a1aa;
-    font-size:14px;
+.task-stats{
+    display:flex;
+    gap:10px;
 }
-.task-count{
-    width:70px;
+.stat{
+    width:75px;
     height:70px;
     border-radius:18px;
     background:rgba(255,255,255,0.1);
@@ -80,14 +83,15 @@ h1 span{
     justify-content:center;
     align-items:center;
 }
-.task-count span{
-    font-size:25px;
+.stat span{
+    font-size:22px;
     font-weight:800;
     color:#c4b5fd;
 }
-.task-count small{
-    font-size:10px;
+.stat small{
+    font-size:9px;
     color:#a1a1aa;
+    margin-top:3px;
 }
 .input-section{
     display:flex;
@@ -145,10 +149,6 @@ h1 span{
 }
 .list-header h2{
     font-size:17px;
-}
-#completedCount{
-    font-size:12px;
-    color:#a1a1aa;
 }
 #taskList{
     list-style:none;
@@ -263,8 +263,11 @@ h1 span{
     h1{
         font-size:32px;
     }
-    .task-count{
-        width:58px;
+    .task-stats{
+        gap:5px;
+    }
+    .stat{
+        width:65px;
         height:58px;
     }
     .input-section{
